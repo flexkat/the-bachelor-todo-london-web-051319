@@ -51,7 +51,6 @@ def get_occupation(data, hometown)
       end
     end
   end
-  
 end
 
 def get_average_age_for_season(data, season)
@@ -70,6 +69,4 @@ def get_average_age_for_season(data, season)
   end
   average_age = age_array.inject { |sum, element| (sum + element) }.to_f / age_array.size
   average_age.round
-  
-  # average_age.ceil = total_ages / age_array.size
 end
